@@ -1,24 +1,39 @@
 baseURL = "https://uk-sps-fm.github.io/seminars/"
-languageCode = "en-us"
+languageCode = "en-GB"
+defaultContentLanguage = "en"
 title = "UK Security & Privacy Seminars"
 theme = "PaperMod"
 publishDir = "public"
+timeZone = "Europe/London"
 
 [params]
   description = "The hub for UK Security & Privacy Seminars and Formal Methods Security Network"
   author = "UKSPS and FM-SEC Team"
-
+  dateFormat = "Mon 2 Jan 2006"
+  timeFormat = "15:04"
+  mainSections = ["talks"]  # Shows only talks on the homepage, no random pages
+  
 [taxonomies]
   tag = "tags"
   category = "categories"
-
+  
 [menus]
   [[menu.main]]
     name = "Home"
     url = "/"
     weight = 1
-
+    
+  [[menu.main]]
+    name = "Talks"
+    url = "/talks/"
+    weight = 2
+    
+  [[menu.main]]
+    name = "Presenters"
+    url = "/presenters/"
+    weight = 3
+    
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 2
+    weight = 4

@@ -1,6 +1,6 @@
 ---
 title: 'Welcome to UK Security & Privacy Seminars'
-date: 2025-01-02T11:09:59Z
+date: 2025-01-02
 draft: false
 ---
 
@@ -9,5 +9,5 @@ draft: false
 Stay tuned for our upcoming events, presentations, and panel discussions on critical security topics such as data protection, cybersecurity, privacy laws, and more.
 Join us for insightful discussions and networking opportunities with industry leaders.
 
-
+---
 
