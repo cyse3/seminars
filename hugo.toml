@@ -1,9 +1,24 @@
 baseURL = "https://uk-sps-fm.github.io/seminars/"
 languageCode = "en-us"
-title = "UK Security & Privacy Seminars + Formal Methods"
-theme = "ananke"
+title = "UK Security & Privacy Seminars"
+theme = "PaperMod"
 publishDir = "public"
 
 [params]
-  description = "The hub for UK Security & Privacy Seminars + Seminars in Formal Methods"
-  author = "UK Security & Privacy and Formal Methods Team"
+  description = "The hub for UK Security & Privacy Seminars and Formal Methods Security Network"
+  author = "UKSPS and FM-SEC Team"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[menus]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
