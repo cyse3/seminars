@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <article>
+    <header>
+      <h1 class="post-title">{{ .Params.title }}</h1>
+    </header>
+    <div class="post-content">
+      <p>List of all presenters contributing to our talks:</p>
+      <ul>
+        {{ range .Pages }}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+          </li>
+        {{ else }}
+          <p>No presenters found.</p>
+        {{ end }}
+      </ul>
+    </div>
+  </article>
+{{ end }}

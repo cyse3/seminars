@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <article>
+    <header>
+      <h1 class="post-title">{{ .Params.name }}</h1>
+    </header>
+    <div class="post-content">
+      <img src="{{ .Params.picture }}" alt="">
+      <p><strong>Affiliation:</strong> {{ .Params.affiliation }}</p>
+      <p>{{ .Content }}</p>
+
+      <h2>Talks by {{ .Params.name }}</h2>
+      <ul>
+        {{ range where .Site.Pages "Params.presenter" .File.BaseFileName }}
+          <li>
+            {{ .Date.Format "Mon 2 Jan 2006" }}: <a href="{{ .Permalink }}">{{ .Params.title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </article>
+{{ end }}

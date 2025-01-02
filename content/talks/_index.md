@@ -1,0 +1,4 @@
+---
+title: "Seminars"
+layout: "talks"
+---
