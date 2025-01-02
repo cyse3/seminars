@@ -22,7 +22,7 @@ hidden: true
 - Roberto Metere (University of York) • co-chair
 - Siamak F. Shahandashti (University of York) • co-chair
 
-## Former organisation committee members of UK-SPS
+## Former members of UK-SPS
 
 - Ruba Abu-Salma (King’s College London)
 - Vineet Rajani (University of Kent)
