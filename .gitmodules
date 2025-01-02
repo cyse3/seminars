@@ -1,6 +1,12 @@
-[submodule "seminars/themes/ananke"]
-	path = seminars/themes/ananke
-	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/beautifulhugo"]
+	path = themes/beautifulhugo
+	url = https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo
+[submodule "themes/hugo-academic"]
+	path = themes/hugo-academic
+	url = https://github.com/gcushen/hugo-academic.git themes/hugo-academic
