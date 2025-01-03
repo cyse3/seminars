@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main>
+  <section>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.description }}</p>
+  </section>
+
+  <section>
+    <h2>Latest Talks</h2>
+    <ul>
+      {{ range first 5 (where .Site.Pages "Type" "talks") }}
+        {{ if ne .Kind "section" }} <!-- Exclude section index pages -->
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "Jan 2, 2006" }}
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+
+</main>
+{{ end }}
