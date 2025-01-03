@@ -8,7 +8,7 @@
       <p>{{ .Params.description }}</p>
 
       <h3>Presenter</h3>
-      {{ $presenter := .Site.GetPage "presenters" (printf "/%s/" .Params.presenter) }}
+      {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" .Params.presenter) }}
       {{ if $presenter }}
         <p><a href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a></p>
       {{ else }}
