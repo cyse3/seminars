@@ -3,7 +3,7 @@
   {{ $mod := mod $hash 7 }} <!-- Map to range [0, 6] -->
   {{ $classes := slice "primary" "secondary" "danger" "warning" "success" "info" "light" }}
   {{ $colour := index $classes $mod }}
-  <div>
+  <section>
     {{ $image := printf "%s.jpg" .File.BaseFileName }}
     {{ $imageInternalPath := printf "%s%s" .File.Dir $image }}
     {{ if (fileExists $imageInternalPath) }}
@@ -11,9 +11,9 @@
     {{ end }}
     <h1 class="post-title">{{ .Params.name }}</h1>
     <h3 class="text-info-emphasis"><em>{{ .Params.affiliation }}</em></h3>
-  </div>
+  </section>
   <hr />
-  <div class="post-content mt-5">
+  <section class="post-content mt-5">
     <h3>Short bio</h3>
     <p>{{ .Content }}</p>
 
@@ -26,5 +26,5 @@
         </li>
       {{ end }}
     </ul>
-  </div>
+  </section>
 {{ end }}

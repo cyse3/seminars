@@ -4,7 +4,7 @@
     <p>List of all presenters contributing to our talks:</p>
   </section>
   
-  <div class="container">
+  <section class="container">
     <div class="d-flex flex-wrap">
       {{ range .Pages }}
         {{ $hash := add (len .Params.name) (len (slice .Params.name)) }}
@@ -29,5 +29,5 @@
         <p>No presenters found.</p>
       {{ end }}
     </div>
-  </div>
+  </section>
 {{ end }}
