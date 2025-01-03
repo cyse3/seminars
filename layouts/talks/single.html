@@ -1,22 +1,25 @@
 {{ define "main" }}
-  <article>
-    <header>
-      <h1 class="post-title">{{ .Params.title }}</h1>
-    </header>
-    <div class="post-content">
-      <p><strong>Date:</strong> {{ .Date.Format "2 January 2006" }}</p>
-      <p>{{ .Params.description }}</p>
+  <section>
+    <h1 class="post-title">{{ .Params.title }}</h1>
+  </section>
+  <section class="post-content">
+    <h3>
+      <span class="badge bg-info">{{ .Date.Format "2 January 2006" }}</span>
 
-      <h3>Presenter</h3>
       {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" .Params.presenter) }}
       {{ if $presenter }}
-        <p><a href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a></p>
-      {{ else }}
-        <p>Presenter not found.</p>
+        <i class="fa-solid fa-person-chalkboard ms-3 me-3"></i> Presented by
+        <a href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a>
+        <em>({{ $presenter.Params.affiliation }})</em>
       {{ end }}
+    </h3>
 
-      <h2>Abstract</h2>
-      <div>{{ .Content }}</div>
-    </div>
-  </article>
+    <hr/>
+    <h3><i class="fa-solid fa-pen-nib"></i> Abstract</h3>
+    <div>{{ .Content }}</div>
+    <hr/>
+    {{ if .Params.youtube }}
+      <a type="button" class="btn btn-danger" target="_blank" href="https://www.youtube.com/watch?v={{ .Params.youtube }}"><i class="fa-brands fa-youtube"></i> See video on YouTube</a>
+    {{ end }}
+  </section>
 {{ end }}
