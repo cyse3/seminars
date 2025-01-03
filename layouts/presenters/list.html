@@ -16,6 +16,8 @@
           {{ $imageInternalPath := printf "%s%s" .File.Dir $image }}
           {{ if (fileExists $imageInternalPath) }}
             <img src="{{ $image }}" alt="" class="border-{{ $colour }}" />
+          {{ else }}
+            <img src="#" alt="" class="invisible" />
           {{ end }}
           <div class="card border-{{ $colour }}">
             <div class="card-body">
