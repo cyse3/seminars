@@ -1,21 +1,30 @@
 {{ define "main" }}
-  <article>
-    <header>
-      <h1 class="post-title">{{ .Params.name }}</h1>
-    </header>
-    <div class="post-content">
-      <img src="{{ .Params.picture }}" alt="">
-      <p><strong>Affiliation:</strong> {{ .Params.affiliation }}</p>
-      <p>{{ .Content }}</p>
+  {{ $hash := add (len .Params.name) (len (slice .Params.name)) }}
+  {{ $mod := mod $hash 7 }} <!-- Map to range [0, 6] -->
+  {{ $classes := slice "primary" "secondary" "danger" "warning" "success" "info" "light" }}
+  {{ $colour := index $classes $mod }}
+  <div>
+    {{ $image := printf "%s.jpg" .File.BaseFileName }}
+    {{ $imageInternalPath := printf "%s%s" .File.Dir $image }}
+    {{ if (fileExists $imageInternalPath) }}
+    <img src="../{{ $image }}" alt="" class="presenter border-{{ $colour }}" />
+    {{ end }}
+    <h1 class="post-title">{{ .Params.name }}</h1>
+    <h3 class="text-info-emphasis"><em>{{ .Params.affiliation }}</em></h3>
+  </div>
+  <hr />
+  <div class="post-content mt-5">
+    <h3>Short bio</h3>
+    <p>{{ .Content }}</p>
 
-      <h2>Talks by {{ .Params.name }}</h2>
-      <ul>
-        {{ range where .Site.Pages "Params.presenter" .File.BaseFileName }}
-          <li>
-            {{ .Date.Format "Mon 2 Jan 2006" }}: <a href="{{ .Permalink }}">{{ .Params.title }}</a>
-          </li>
-        {{ end }}
-      </ul>
-    </div>
-  </article>
+    <h3>Talks by {{ .Params.name }}</h3>
+    <ul class="list-group">
+      {{ range where .Site.Pages "Params.presenter" .File.BaseFileName }}
+        <li class="list-group-item list-group-item-{{ $colour }} d-flex justify-content-between align-items-center">
+          <span class="badge bg-info me-3">{{ .Date.Format "2 Jan 2006" }}</span>
+          <a href="{{ .Permalink }}">{{ .Params.title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
 {{ end }}

@@ -1,19 +1,31 @@
 {{ define "main" }}
-  <article>
-    <header>
-      <h1 class="post-title">{{ .Params.title }}</h1>
-    </header>
-    <div class="post-content">
-      <p>List of all presenters contributing to our talks:</p>
-      <ul>
-        {{ range .Pages }}
-          <li>
-            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
-          </li>
-        {{ else }}
-          <p>No presenters found.</p>
-        {{ end }}
-      </ul>
+  <section>
+    <h1>{{ .Params.title }}</h1>
+    <p>List of all presenters contributing to our talks:</p>
+  </section>
+  
+  <div class="container">
+    <div class="d-flex flex-wrap">
+      {{ range .Pages }}
+        {{ $hash := add (len .Params.name) (len (slice .Params.name)) }}
+        {{ $mod := mod $hash 7 }} <!-- Map to range [0, 6] -->
+        {{ $classes := slice "primary" "secondary" "danger" "warning" "success" "info" "light" }}
+        {{ $colour := index $classes $mod }}
+        <div class="presenter block">
+          {{ $image := printf "%s.jpg" .File.BaseFileName }}
+          {{ $imageInternalPath := printf "%s%s" .File.Dir $image }}
+          <img src="{{ cond (fileExists $imageInternalPath) $image "dude.jpg" }}" alt="" class="border-{{ $colour }}" />
+          <div class="card border-{{ $colour }}">
+            <div class="card-body">
+              <h3 class="card-title">{{ .Params.name }}</h3>
+              <h5 class="card-title">{{ .Params.affiliation }}</h5>
+            </div>
+            <a type="button" class="btn btn-{{ $colour }}" href="{{ .Permalink }}"><i class="fa-solid fa-glasses"></i> Read more...</a>
+          </div>
+        </div>
+      {{ else }}
+        <p>No presenters found.</p>
+      {{ end }}
     </div>
-  </article>
+  </div>
 {{ end }}
