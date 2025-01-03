@@ -2,7 +2,6 @@ baseURL = "https://uk-sps-fm.github.io/seminars/"
 languageCode = "en-GB"
 defaultContentLanguage = "en"
 title = "UK Security & Privacy Seminars"
-theme = "PaperMod"
 publishDir = "public"
 timeZone = "Europe/London"
 
