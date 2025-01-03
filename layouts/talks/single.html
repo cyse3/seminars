@@ -10,7 +10,7 @@
       <h3>Presenter</h3>
       {{ $presenter := .Site.GetPage "presenters" (printf "/%s/" .Params.presenter) }}
       {{ if $presenter }}
-        <p>Presenter: <a href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a></p>
+        <p><a href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a></p>
       {{ else }}
         <p>Presenter not found.</p>
       {{ end }}
