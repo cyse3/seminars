@@ -12,3 +12,34 @@ body {
 main {
   flex: 1;
 }
+
+.presenter {
+  width: fit-content;
+  margin: 1rem;
+  
+}
+
+.presenter .card-body {
+  padding-right: 6em;
+}
+
+.presenter > img {
+  display: block;
+  margin: 0 -1rem -5rem auto;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  border: 3px solid;
+  object-fit: cover;
+  position: relative;
+  z-index: 1000;
+}
+
+img.presenter {
+  border-radius: 50%;
+  border: 7px gray inset;
+  float: right;
+  height: 12rem;
+  width: 12rem;
+  object-fit: cover;
+}
