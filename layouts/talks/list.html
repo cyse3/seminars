@@ -1,19 +1,30 @@
 {{ define "main" }}
-  <article>
-    <header>
-      <h1 class="post-title">{{ .Params.title }}</h1>
-    </header>
-    <div class="post-content">
-      <h2>Past Talks</h2>
-      <ul>
+  <section>
+    <h1 class="post-title">{{ .Params.title }}</h1>
+  </section>
+  
+  <section>
+    <h2>Past Talks</h2>
+    <table class="table table-responsive align-middle">
+      <thead></thead>
+      <tbody>
         {{ range where .Pages "Date" "lt" now }}
-          <li>
-            {{ .Date.Format "Mon 2 Jan 2006" }}: <a href="{{ .Permalink }}">{{ .Params.title }}</a> 
-          </li>
+          <tr>
+            <td><span class="badge bg-info">{{ .Date.Format "2 Jan 2006" }}</span></td>
+            <td>
+              {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" .Params.presenter) }}
+              {{ if $presenter }}
+                <a class="text-warning-emphasis" href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a>
+                <br />
+              {{ end }}
+              {{ .Params.title }}
+            </td>
+            <td><a type="button" class="btn btn-light" href="{{ .Permalink }}"><i class="fa-solid fa-glasses"></i></a></td>
+          </tr>
         {{ else }}
-          <p>No talks found.</p>
+          <tr><td>No talks found.</td></tr>
         {{ end }}
-      </ul>
-    </div>
-  </article>
+      </tbody>
+    </table>
+  </section>
 {{ end }}
