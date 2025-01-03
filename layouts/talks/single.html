@@ -1,11 +1,11 @@
 {{ define "main" }}
   <section>
-    <h1 class="post-title">{{ .Params.title }}</h1>
+    <h1>{{ .Params.title }}</h1>
   </section>
-  <section class="post-content">
-    <h3>
-      <span class="badge bg-info">{{ .Date.Format "2 January 2006" }}</span>
-
+  <section>
+    <h3 class="mt-5">
+      <span class="badge bg-info mb-3">{{ .Date.Format "2 January 2006" }}</span>
+      <br />
       {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" .Params.presenter) }}
       {{ if $presenter }}
         <i class="fa-solid fa-person-chalkboard ms-3 me-3"></i> Presented by
@@ -21,5 +21,6 @@
     {{ if .Params.youtube }}
       <a type="button" class="btn btn-danger" target="_blank" href="https://www.youtube.com/watch?v={{ .Params.youtube }}"><i class="fa-brands fa-youtube"></i> See video on YouTube</a>
     {{ end }}
+    <hr/>
   </section>
 {{ end }}
