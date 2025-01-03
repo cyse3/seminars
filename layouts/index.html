@@ -1,8 +1,7 @@
 {{ define "main" }}
-<main>
   <section>
     <h1>{{ .Title }}</h1>
-    <p>{{ .Params.description }}</p>
+    <p>{{ .Content }}</p>
   </section>
 
   <section>
@@ -17,6 +16,4 @@
       {{ end }}
     </ul>
   </section>
-
-</main>
 {{ end }}
