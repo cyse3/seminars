@@ -1,6 +1,5 @@
 ---
 name: "Musard Balliu"
-picture: "/images/john_doe.jpg"
 affiliation: "KTH Royal Institute of Technology"
 ---
 

@@ -1,6 +1,5 @@
 ---
 name: "Bruno Blanchet"
-picture: "/images/john_doe.jpg"
 affiliation: "INRIA"
 ---
 
