@@ -3,6 +3,11 @@ title: "Securing Cloud-based IoT Apps"
 date: 2022-04-13
 time: 3PM
 presenter: "musard-balliu"
+collaboration: FM-SEC
+youtube: "5W_zboVI5NI"
+zoom-link: 
+zoom-id: 
+zoom-password: 
 ---
 
 Innovative IoT apps break conventional paradigms to connect otherwise unconnected services and devices ranging from pacemakers, baby monitors, surveillance cameras to cars and smart cities.

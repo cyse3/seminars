@@ -3,6 +3,11 @@ title: "The security protocol verifier ProVerif and its recent improvements: lem
 date: 2022-05-18
 time: 3PM
 presenter: "bruno-blanchet"
+collaboration: FM-SEC
+youtube: "IYOl3AKXdkA"
+zoom-link: 
+zoom-id: 
+zoom-password: 
 ---
 
 ProVerif is a widely used automatic security protocol verifier that relies on symbolic model of cryptography.
