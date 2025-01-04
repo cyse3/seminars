@@ -2,6 +2,10 @@
   <section>
     <h1>{{ .Title }}</h1>
     <p>{{ .Content }}</p>
+    
+    <h3>Partner institutions</h3>
+    {{ partial "partners.html" . }}
+    <hr/>
   </section>
 
   <section>

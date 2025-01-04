@@ -1,6 +1,7 @@
 ---
 title: About
 date: 2025-01-02T10:46:21Z
+layout: "about"
 draft: false
 hidden: true
 ---
@@ -16,11 +17,13 @@ hidden: true
 
 ## Organisation Committee
 
-- Ioana Boureanu (University of Surrey) • co-chair
-- Erisa Karafili (University of Southampton) • co-chair
-- Luca Arnaboldi (University of Birmingham) • co-chair
-- Roberto Metere (University of York) • co-chair
-- Siamak F. Shahandashti (University of York) • co-chair
+Co-chairs:
+
+- Ioana Boureanu (University of Surrey)
+- Erisa Karafili (University of Southampton)
+- Luca Arnaboldi (University of Birmingham)
+- Roberto Metere (University of York)
+- Siamak F. Shahandashti (University of York)
 
 ## Former members of UK-SPS
 

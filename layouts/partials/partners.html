@@ -1,10 +1,13 @@
 <section class="container">
-  <div class="d-flex flex-wrap">
+  <div class="partners alert d-flex flex-wrap justify-content-center align-items-center">
     {{ $images := readDir "static/partners/" }}
     {{ range $images }}
       {{ if (strings.HasSuffix .Name ".png") }}
-        <div class="partner block">
-          <img src="../partners/{{ .Name }}" alt="{{ .Name }}" />
+        {{ $parts := split .Name "." }}
+        {{ $basename := index $parts 0 }}
+        {{ $imageSource := printf "partners/%s" .Name }}
+        <div class="block m-2">
+          <img src="{{ $imageSource | relURL }}" alt="{{ $basename }}" />
         </div>
       {{ end }}
     {{ else }}
