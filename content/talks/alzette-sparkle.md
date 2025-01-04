@@ -3,7 +3,6 @@ title: "Recent Developments in Lightweight Cryptography: Alzette and SPARKLE"
 date: 2021-05-26
 time: 3PM
 presenter: "vesselin-velichkov"
-collaboration: FM-SEC
 youtube: "9QY_KlAwEgE"
 zoom-link: "https://ed-ac-uk.zoom.us/j/83750166253"
 zoom-id: "837 5016 6253"
