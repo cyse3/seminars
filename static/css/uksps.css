@@ -20,6 +20,14 @@ footer {
   background-color: rgba(69, 69, 69, .2);
 }
 
+.table > :not(caption) > * > * {
+  background-color: transparent;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) > * {
+  background-color: rgba(50, 50, 50, .3);
+}
+
 /* Presenters */
 .presenter {
   width: fit-content;
