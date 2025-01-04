@@ -1,0 +1,8 @@
+---
+name: "Basel Halak"
+affiliation: "University of Southampton"
+---
+
+Dr Basel Halak is the director of the embedded systems and IoT program at the University of Southampton, a visiting scholar at the Technical University of Kaiserslautern ,a visiting professor at the Kazakh-British Technical University, an industrial fellow of the royal academy of engineering , and a national teaching fellow of the Advance Higher Education(HE) Academy . Dr Halak's publications include over 80-refereed conference and journal papers, and authored three books, including the first textbook on Physically Unclonable Functions. His research expertise includes evaluation of security of hardware devices, development of appropriate countermeasures, the development of mathematical formalisms of reliability issues in CMOS circuits (e.g. crosstalk, radiation, ageing), and the use of fault tolerance techniques to improve the robustness of electronics systems against such issues.. Dr Halak lectures on digital design, Secure Hardware and Cryptography, supervises several MSc and PhD students, and is the ECS Exchange Coordinators. He is also leading European Masters in Embedded Computing Systems (EMECS) , a two-year course run in collaboration with Kaiserslautern University in Germany and the Norwegian University of Science and Technology in Trondheim (electronics and communication). Dr Halak serves on several technical program committees such as HOST, IEEE DATE, IVSW, ICCCA, ICCCS, MTV and EWME. He is an associate editor of IEEE access and an editor of the IET circuit devices and system journal. He is also a member of the hardware security-working group of the World Wide Web Consortium (W3C).
+
+Basel's Homepage: http://personal.southampton.ac.uk/bh1m10/

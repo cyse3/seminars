@@ -1,0 +1,6 @@
+---
+name: "Florian Schaub"
+affiliation: "University of Michigan"
+---
+
+Florian Schaub (he/him) is an assistant professor in the University of Michigan School of Information, with a courtesy appointment in Computer Science and Engineering. His interdisciplinary research combines privacy, human-computer interaction, emerging technologies, and public policy. He studies people's privacy decision making and behavior, investigates technology-related privacy implications, and develops human-centric privacy solutions that help people better manage their privacy in technology contexts. Dr. Schaub holds a PhD in Computer Science from the University of Ulm, and was a postdoctoral fellow in Carnegie Mellon University's School of Computer Science. His research has been honored with the 2019 Caspar Bowden Award for Outstanding Research in Privacy Enhancing Technologies, and with best paper awards at the ACM SIGCHI Conference on Human Factors in Computing (CHI), the USENIX Security Symposium, and the Symposium on Usable Privacy and Security (SOUPS). Dr. Schaub is a DARPA Young Faculty Award recipient. His research has directly impacted industry practice and public policy, including the rulemaking process for the California Consumer Privacy Act (CCPA). Dr. Schaub and his work are frequently featured in national and international news media.

@@ -1,0 +1,6 @@
+---
+name: "Yves-Alexandre de Montjoye"
+affiliation: "Imperial College London"
+---
+
+Yves-Alexandre de Montjoye is an Associate Professor at Imperial College London. He currently is a Special Adviser on AI and Data Protection to EC Justice Commissioner Reynders and a Parliament-appointed expert to the Belgian Data Protection Agency (APD-GBA). In 2018-2019, he was a Special Adviser to EC Competition Commissioner Vestager co-authoring the Competition Policy for the Digital Era report. His research has been published in Science and Nature Communications and has enjoyed wide media coverage (BBC, CNN, New York Times, Wall Street Journal, Harvard Business Review, etc.). His work on the shortcomings of anonymization has appeared in reports of the World Economic Forum, FTC, European Commission, and the OECD. Yves-Alexandre worked for the Boston Consulting Group and acted as an expert for both the Bill and Melinda Gates Foundation and the United Nations. He received his PhD from MIT in 2015 and obtained, over a period of 6 years, an M.Sc. from UCLouvain in Applied Mathematics, an M.Sc. (Centralien) from École Centrale Paris, an M.Sc. from KULeuven in Mathematical Engineering as well as his B.Sc. in engineering from UCLouvain.
