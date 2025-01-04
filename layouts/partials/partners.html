@@ -6,7 +6,7 @@
         {{ $parts := split .Name "." }}
         {{ $basename := index $parts 0 }}
         {{ $imageSource := printf "partners/%s" .Name }}
-        <div class="block m-2">
+        <div class="block m-4">
           <img src="{{ $imageSource | relURL }}" alt="{{ $basename }}" />
         </div>
       {{ end }}
