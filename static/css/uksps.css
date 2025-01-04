@@ -7,10 +7,17 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  background-image: url("../chalkboard.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 main {
   flex: 1;
+}
+
+footer {
+  background-color: rgba(69, 69, 69, .2);
 }
 
 /* Presenters */
