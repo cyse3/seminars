@@ -5,7 +5,7 @@
   </section>
   
   <section class="container">
-    <div class="d-flex flex-wrap">
+    <div class="d-flex flex-wrap justify-content-center">
       {{ range .Pages }}
         {{ $hash := add (len .Params.name) (len (slice .Params.name)) }}
         {{ $mod := mod $hash 7 }} <!-- Map to range [0, 6] -->
@@ -28,7 +28,9 @@
           </div>
         </div>
       {{ else }}
-        <p>No presenters found.</p>
+      <div class="alert alert-danger" role="alert">
+        No presenters found.
+      </div>
       {{ end }}
     </div>
   </section>
