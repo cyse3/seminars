@@ -5,9 +5,9 @@ time: 2PM
 presenter: "bruno-blanchet"
 collaboration: FM-SEC
 youtube: "IYOl3AKXdkA"
-zoom-link: https://newcastleuniversity.zoom.us/j/83481866474?pwd%3DQjl4NDZvQ0l1V1ByU1l3SUg3eTZIUT09
-zoom-id: 834 8186 6474
-zoom-password: 032120
+zoom-link: "https://newcastleuniversity.zoom.us/j/83481866474?pwd%3DQjl4NDZvQ0l1V1ByU1l3SUg3eTZIUT09"
+zoom-id: "834 8186 6474"
+zoom-password: "032120"
 ---
 
 ProVerif is a widely used automatic security protocol verifier that relies on symbolic model of cryptography.

@@ -5,9 +5,9 @@ time: 3PM
 presenter: "musard-balliu"
 collaboration: FM-SEC
 youtube: "_6AYsu3S1d4"
-zoom-link: https://newcastleuniversity.zoom.us/j/81043449840?pwd%3DdXZqd0tpVDYzWkQvMDcyZFRpUnNkQT09
-zoom-id: 810 4344 9840
-zoom-password: 416257
+zoom-link: "https://newcastleuniversity.zoom.us/j/81043449840?pwd%3DdXZqd0tpVDYzWkQvMDcyZFRpUnNkQT09"
+zoom-id: "810 4344 9840"
+zoom-password: "416257"
 ---
 
 Innovative IoT apps break conventional paradigms to connect otherwise unconnected services and devices ranging from pacemakers, baby monitors, surveillance cameras to cars and smart cities.
