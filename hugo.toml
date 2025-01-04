@@ -23,7 +23,7 @@ timeZone = "Europe/London"
     weight = 1
     
   [[menu.main]]
-    name = "Talks"
+    name = "Seminars"
     url = "/talks/"
     weight = 2
     

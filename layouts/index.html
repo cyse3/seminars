@@ -5,7 +5,7 @@
   </section>
 
   <section>
-    <h2>Latest Talks</h2>
+    <h2>Latest seminars</h2>
     <div class="accordion" id="accordionExample">
       {{ range $index, $page := first 5 (where .Site.Pages "Type" "talks") }}
         {{ if ne .Kind "section" }} <!-- Exclude section index pages -->
