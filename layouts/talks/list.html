@@ -22,7 +22,11 @@
             <td><a type="button" class="btn btn-light" href="{{ .Permalink }}"><i class="fa-solid fa-glasses"></i></a></td>
           </tr>
         {{ else }}
-          <tr><td>No talks found.</td></tr>
+          <tr><td>
+            <div class="alert alert-danger" role="alert">
+              No seminars found
+            </div>
+          </td></tr>
         {{ end }}
       </tbody>
     </table>
