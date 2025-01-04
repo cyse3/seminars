@@ -1,0 +1,16 @@
+<section class="container">
+  <div class="d-flex flex-wrap">
+    {{ $images := readDir "static/partners/" }}
+    {{ range $images }}
+      {{ if (strings.HasSuffix .Name ".png") }}
+        <div class="partner block">
+          <img src="../partners/{{ .Name }}" alt="{{ .Name }}" />
+        </div>
+      {{ end }}
+    {{ else }}
+      <div class="alert alert-danger" role="alert">
+        No partners found
+      </div>
+    {{ end }}
+  </div>
+</section>
