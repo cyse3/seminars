@@ -13,6 +13,7 @@ main {
   flex: 1;
 }
 
+/* Presenters */
 .presenter {
   width: fit-content;
   margin: 1rem;
@@ -42,4 +43,15 @@ img.presenter {
   height: 12rem;
   width: 12rem;
   object-fit: cover;
+}
+
+/* Partners */
+.partners {
+  background-color: #cecdc7;
+}
+
+.partners img {
+  margin: auto;
+  max-width: 170px;
+  max-height: 92px;
 }
