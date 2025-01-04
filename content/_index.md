@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to UK Security & Privacy Seminars'
+title: 'Cyber Security & Privacy Seminar Series'
 date: 2025-01-02
 draft: false
 ---
