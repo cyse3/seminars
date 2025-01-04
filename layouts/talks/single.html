@@ -2,9 +2,13 @@
   <section>
     <h1>{{ .Params.title }}</h1>
   </section>
+  
   <section>
     <h3 class="mt-5">
       <span class="badge bg-info mb-3">{{ .Date.Format "2 January 2006" }}</span>
+      {{ if .Params.collaboration }}
+        <span class="badge bg-danger ms-3">{{ .Params.collaboration }}</span>
+      {{ end }}
       <br />
       {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" .Params.presenter) }}
       {{ if $presenter }}

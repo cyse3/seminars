@@ -15,8 +15,11 @@
               {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" .Params.presenter) }}
               {{ if $presenter }}
                 <a class="text-warning-emphasis" href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a>
-                <br />
               {{ end }}
+              {{ if .Params.collaboration }}
+                <span class="badge bg-danger ms-3">{{ .Params.collaboration }}</span>
+              {{ end }}
+              <br />
               {{ .Params.title }}
             </td>
             <td><a type="button" class="btn btn-light" href="{{ .Permalink }}"><i class="fa-solid fa-glasses"></i> Read more...</a></td>
