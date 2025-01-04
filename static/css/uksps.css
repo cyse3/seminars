@@ -28,7 +28,7 @@ main {
   margin: 0 -1rem -5rem auto;
   height: 6rem;
   width: 6rem;
-  border-radius: 50%;
+  border-radius: 25px 25px 55px 5px/5px 55px 25px 25px;
   border: 3px solid;
   object-fit: cover;
   position: relative;
@@ -36,7 +36,7 @@ main {
 }
 
 img.presenter {
-  border-radius: 50%;
+  border-radius: 25px 25px 55px 5px/5px 55px 25px 25px;
   border: 7px gray inset;
   float: right;
   height: 12rem;
