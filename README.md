@@ -1,6 +1,7 @@
 # UK Security & Privacy Seminars (UK-SPS)
 
 ![Logo](https://raw.githubusercontent.com/uk-sps-fm/seminars/refs/heads/main/static/logo_sq-16-150x150.png)
+
 Welcome to the **UK Security & Privacy Seminars** website repository! This project is powered by [Hugo](https://gohugo.io/), a fast and flexible static site generator, and is designed to showcase upcoming talks, presenters, and past events.
 
 ---
@@ -9,7 +10,7 @@ Welcome to the **UK Security & Privacy Seminars** website repository! This proje
 
 - **Dynamic Content**: Add, update, and manage talks and presenters easily.
 - **Customizable Design**: Built with Bootstrap for responsive and modern design.
-- **Future-Proof**: Supports future events and auto-sorting based on dates.
+- **Future-Proof**: Supports future events and auto-sorting based on dates. (TODO)
 - **Rich Content Support**: Add MathJax equations, images, and markdown effortlessly.
 
 ---
@@ -43,16 +44,18 @@ Welcome to the **UK Security & Privacy Seminars** website repository! This proje
 
 3. **Run the Development Server**:
    ```bash
-   hugo server
+   hugo server -D
    ```
+   Changes in local development, i.e., creating or saving files, will generally trigger new deployment.
+   Some changes will also trigger a refresh of the web page (tested in Firefox), other changes require you do to it manually.
 
-4. **View the Website**:
+5. **View the Website**:
    Open [http://localhost:1313](http://localhost:1313) in your browser.
 
-5. **Build the Website**:
+6. **Build the Website**:
    Generate the static files for deployment:
    ```bash
-   hugo
+   hugo -D
    ```
 
 ---
@@ -81,12 +84,7 @@ Welcome to the **UK Security & Privacy Seminars** website repository! This proje
 ## 📦 Deployment
 
 This site is hosted on GitHub Pages. Changes pushed to the `main` branch will trigger an automatic deployment.
-**So be mindful**
-
-To manually build the site:
-```bash
-hugo -D
-```
+**So be mindful!**
 
 ---
 
