@@ -3,7 +3,7 @@ title: "Certifying Statistical Robustness in Coq"
 date: 2024-01-31
 time: 3PM
 presenter: "alessandro-bruni"
-youtube: ""
+youtube: "P05V5ADN4nc"
 zoom-link: 
 zoom-id: 
 zoom-password: 
