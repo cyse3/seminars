@@ -1,8 +1,8 @@
-# UK Security & Privacy Seminars (UK-SPS)
+# CySe³ - Cyber Security Seminars Series
 
-![Logo](https://raw.githubusercontent.com/uk-sps-fm/seminars/refs/heads/main/static/logo_sq-16-150x150.png)
+![Logo](https://raw.githubusercontent.com/cyse3/seminars/refs/heads/main/static/logo_sq-16-150x150.png)
 
-Welcome to the **UK Security & Privacy Seminars** website repository! This project is powered by [Hugo](https://gohugo.io/), a fast and flexible static site generator, and is designed to showcase upcoming talks, presenters, and past events.
+Welcome to the **Cyber Security Seminars Series** website repository! This project is powered by [Hugo](https://gohugo.io/), a fast and flexible static site generator, and is designed to showcase upcoming talks, presenters, and past events.
 
 ---
 
@@ -35,7 +35,7 @@ Welcome to the **UK Security & Privacy Seminars** website repository! This proje
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/uk-sps-fm/seminars.git
+   git clone https://github.com/cyse3/seminars.git
    cd seminars
    ```
 
