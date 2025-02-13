@@ -22,10 +22,10 @@ Co-chairs:
 - Ioana Boureanu (University of Surrey)
 - Erisa Karafili (University of Southampton)
 - Luca Arnaboldi (University of Birmingham)
-- Roberto Metere (University of York)
 - Siamak F. Shahandashti (University of York)
+- Roberto Metere (University of York)
 
-## Former members of UK-SPS
+## Former members of CySe³, UK-SPS, or FM-SEC
 
 - Ruba Abu-Salma (King’s College London)
 - Vineet Rajani (University of Kent)
