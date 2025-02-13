@@ -1,13 +1,13 @@
-baseURL = "https://uk-sps-fm.github.io/seminars/"
+baseURL = "https://cyse3.github.io/seminars/"
 languageCode = "en-GB"
 defaultContentLanguage = "en"
-title = "UK Security & Privacy Seminars"
+title = "Cyber Security Seminar Series"
 publishDir = "public"
 timeZone = "Europe/London"
 
 [params]
-  description = "The hub for UK Security & Privacy Seminars and Formal Methods Security Network"
-  author = "UKSPS and FM-SEC Team"
+  description = "The hub for Cyber Security Seminar Series (a joint effort from UK Security & Privacy Seminars and Formal Methods Security Network)"
+  author = "CySe³ Team"
   dateFormat = "Mon 2 Jan 2006"
   timeFormat = "15:04"
   mainSections = ["talks"]  # Shows only talks on the homepage, no random pages
