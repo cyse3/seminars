@@ -1,7 +1,7 @@
 ---
 title: "Formal Analysis of the I-ETMS Train Control Systems Safety Cases"
 date: 2025-06-11
-time: 3PM
+time: 2PM
 presenter: "tom-chothia"
 youtube: ""
 zoom-link: ""
