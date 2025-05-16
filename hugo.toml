@@ -4,6 +4,7 @@ defaultContentLanguage = "en"
 title = "Cyber Security & Resilience Seminar Series"
 publishDir = "public"
 timeZone = "Europe/London"
+buildFuture = true
 
 [params]
   description = "The hub for Cyber Security & Resilience Seminar Series (a joint effort from UK Security & Privacy Seminars and Formal Methods Security Network)"
