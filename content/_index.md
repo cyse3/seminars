@@ -1,5 +1,5 @@
 ---
-title: 'Cyber Security Seminar Series'
+title: 'Cyber Security & Resilience Seminar Series'
 date: 2025-01-02
 draft: false
 ---

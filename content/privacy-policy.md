@@ -7,7 +7,7 @@ hidden: true
 
 ## Who we are
 
-Cyber Security Seminar Series (CySe<sup>3</sup>) organises a series of seminars with presenters from across prestigious UK universities
+Cyber Security & Resilience Seminar Series (CySe<sup>3</sup>) organises a series of seminars with presenters from across prestigious UK universities
 
 
 ## Media
