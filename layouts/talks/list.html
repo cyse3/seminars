@@ -3,12 +3,49 @@
     <h1>{{ .Params.title }}</h1>
   </section>
   
+  {{ $now := now }}
+  {{ $futureTalks := where .Pages "Date" "gt" $now }}
+  {{ $pastTalks := where .Pages "Date" "le" $now }}
+  
+  <section>
+    <h2>Scheduled Seminars</h2>
+    <table class="table table-striped table-responsive align-middle">
+      <thead></thead>
+      <tbody>
+        {{ range $futureTalks }}
+          <tr>
+            <td><span class="badge bg-info">{{ .Date.Format "2 Jan 2006" }}</span></td>
+            <td>
+              {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" .Params.presenter) }}
+              {{ if $presenter }}
+                <a class="text-warning-emphasis" href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a>
+              {{ end }}
+              {{ if .Params.collaboration }}
+                <span class="badge bg-danger ms-3">{{ .Params.collaboration }}</span>
+              {{ end }}
+              <br />
+              {{ .Params.title }}
+            </td>
+            <td><a type="button" class="btn btn-light" href="{{ .Permalink }}"><i class="fa-solid fa-glasses"></i> Read more...</a></td>
+          </tr>
+        {{ else }}
+          <tr><td>
+            <div class="alert alert-danger" role="alert">
+              No upcoming events. Please check back soon!
+            </div>
+          </td></tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </section>
+  
+  {{/* WARNING: this is copypasted from previous section */}}
   <section>
     <h2>Past Seminars</h2>
     <table class="table table-striped table-responsive align-middle">
       <thead></thead>
       <tbody>
-        {{ range where .Pages "Date" "lt" now }}
+        {{ range $pastTalks }}
           <tr>
             <td><span class="badge bg-info">{{ .Date.Format "2 Jan 2006" }}</span></td>
             <td>
