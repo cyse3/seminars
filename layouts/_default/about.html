@@ -2,7 +2,10 @@
   <h1>{{ .Title }}</h1>
   
   <h3>Partner institutions</h3>
-  {{ partial "partners.html" . }}
+  {{ partial "partners.html" (dict "context" . )}}
   
   <div>{{ .Content }}</div>
+  
+  <h3>Former partner institutions of CySe³, UK-SPS, or FM-SEC</h3>
+  {{ partial "partners.html" (dict "context" . "customdir" "static/old-partners" )}}
 {{ end }}
