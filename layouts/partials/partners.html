@@ -1,4 +1,4 @@
-{{ $customdir := cond .customdir .customdir "static/partners/" }}
+{{ $customdir := default "static/partners/" .customdir }}
 
 <section class="container">
   <div class="partners alert d-flex flex-wrap justify-content-center align-items-center">
