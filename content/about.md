@@ -6,18 +6,9 @@ draft: false
 hidden: true
 ---
 
-## Steering Committee
-
-- Chris Mitchell (Royal Holloway, University of London)
-- Eerke Boiten (De Montfort University)
-- Liqun Chen (University of Surrey)
-- Lorenzo Cavallaro (University College London)
-- Mark Ryan (University of Birmingham)
-- Shujun Li (University of Kent)
-
 ## Organisation Committee
 
-Co-chairs:
+### Co-chairs
 
 - Ioana Boureanu (University of Surrey)
 - Erisa Karafili (University of Southampton)
@@ -36,3 +27,9 @@ Co-chairs:
 - Soteris Demetriou (Imperial College London)
 - Paul Bennett, Daniel Prince (Lancaster University)
 - Arnau Erola (University of Oxford)
+- Chris Mitchell (Royal Holloway, University of London)
+- Eerke Boiten (De Montfort University)
+- Liqun Chen (University of Surrey)
+- Lorenzo Cavallaro (University College London)
+- Mark Ryan (University of Birmingham)
+- Shujun Li (University of Kent)

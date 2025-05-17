@@ -3,16 +3,49 @@
     <img class="float-end ms-5" src="logo_sq-16-150x150.png" alt="CySe³ logo" />
     <h1>{{ .Title }}</h1>
     <p>{{ .Content }}</p>
-    
-    <h3>Partner institutions</h3>
-    {{ partial "partners.html" . }}
-    <hr/>
   </section>
 
+  {{ $now := now }}
+  {{ $talks := where .Site.Pages "Type" "talks" }}
+  {{ $futureTalks := where $talks "Date" "gt" $now }}
+  {{ $pastTalks := where $talks "Date" "le" $now }}
+  
+  <section>
+      {{ range $index, $page := first 1 $futureTalks }}
+        {{ if ne .Kind "section" }} <!-- Exclude section index pages -->
+    <h2>Upcoming seminar!</h2>
+    <div class="accordion" id="upcoming-seminar">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-upcoming">
+              <button class="accordion-button border border-warning collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-upcoming" aria-expanded="false" aria-controls="collapse-upcoming">
+                <span class="badge bg-info me-3">{{ $page.Date.Format "2 Jan 2006" }}</span><strong>{{ $page.Title }}</strong>
+                {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" $page.Params.presenter) }}
+                {{ if $presenter }}
+                  <span class="ms-3 text-warning-emphasis"><i class="fa-solid fa-person-chalkboard"></i> {{ $presenter.Params.name }}</span>
+                {{ end }}
+              </button>
+            </h2>
+            <div id="collapse-upcoming" class="accordion-collapse collapse" aria-labelledby="heading-upcoming" data-bs-parent="#upcoming-seminar" style="">
+              <div class="accordion-body">
+                <a type="button" class="btn btn-light" href="{{ $page.Permalink }}"><i class="fa-solid fa-glasses"></i> Read more...</a>
+                {{ if $page.Params.youtube }}
+                  <a type="button" class="btn btn-danger" target="_blank" href="https://www.youtube.com/watch?v={{ $page.Params.youtube }}"><i class="fa-brands fa-youtube"></i> See video on YouTube</a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+          </div>
+        {{ end }}
+      {{ else }}
+      {{ end }}
+    <h2></h2>
+  </section>
+  
+  <hr/>
   <section>
     <h2>Latest seminars</h2>
-    <div class="accordion" id="accordionExample">
-      {{ range $index, $page := first 5 (where .Site.Pages "Type" "talks") }}
+    <div class="accordion" id="latest-seminars">
+      {{ range $index, $page := first 1 $pastTalks }}
         {{ if ne .Kind "section" }} <!-- Exclude section index pages -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading-{{ $index }}">
@@ -24,7 +57,7 @@
                 {{ end }}
               </button>
             </h2>
-            <div id="collapse-{{ $index }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ $index }}" data-bs-parent="#accordionExample" style="">
+            <div id="collapse-{{ $index }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ $index }}" data-bs-parent="#latest-seminars" style="">
               <div class="accordion-body">
                 <a type="button" class="btn btn-light" href="{{ $page.Permalink }}"><i class="fa-solid fa-glasses"></i> Read more...</a>
                 {{ if $page.Params.youtube }}
@@ -37,5 +70,11 @@
       {{ end }}
     </div>
     
+  </section>
+  
+  <hr/>
+  <section>
+    <h3>Partner institutions</h3>
+    {{ partial "partners.html" (dict "context" . ) }}
   </section>
 {{ end }}
