@@ -5,7 +5,8 @@
   
   <section>
     <h3 class="mt-5">
-      <span class="badge bg-info mb-3">{{ .Date.Format "2 January 2006" }}</span>
+      <span class="badge bg-info mb-3 me-3">{{ .Date.Format "2 January 2006" }}</span>
+      <span class="badge bg-light mb-3"> at {{ .Params.time }}</span>
       {{ if .Params.collaboration }}
         <span class="badge bg-danger ms-3">{{ .Params.collaboration }}</span>
       {{ end }}
