@@ -27,6 +27,9 @@
             </h2>
             <div id="collapse-upcoming" class="accordion-collapse collapse" aria-labelledby="heading-upcoming" data-bs-parent="#upcoming-seminar" style="">
               <div class="accordion-body">
+                {{ if index .Params "zoom-link" }}
+                  <a type="button" class="btn btn-success" target="_blank" href="{{ index .Params "zoom-link" }}"><i class="fa-solid fa-video"></i> Zoom link</a>
+                {{ end }}
                 <a type="button" class="btn btn-light" href="{{ $page.Permalink }}"><i class="fa-solid fa-glasses"></i> Read more...</a>
                 {{ if $page.Params.youtube }}
                   <a type="button" class="btn btn-danger" target="_blank" href="https://www.youtube.com/watch?v={{ $page.Params.youtube }}"><i class="fa-brands fa-youtube"></i> See video on YouTube</a>

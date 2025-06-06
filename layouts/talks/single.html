@@ -25,6 +25,9 @@
     {{ if .Params.youtube }}
       <a type="button" class="btn btn-danger" target="_blank" href="https://www.youtube.com/watch?v={{ .Params.youtube }}"><i class="fa-brands fa-youtube"></i> See video on YouTube</a>
     {{ end }}
+    {{ if index .Params "zoom-link" }}
+      <a type="button" class="btn btn-success" target="_blank" href="{{ index .Params "zoom-link" }}"><i class="fa-solid fa-video"></i> Zoom link</a>
+    {{ end }}
     <hr/>
   </section>
 {{ end }}

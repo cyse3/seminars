@@ -26,7 +26,12 @@
               <br />
               {{ .Params.title }}
             </td>
-            <td><a type="button" class="btn btn-light" href="{{ .Permalink }}"><i class="fa-solid fa-glasses"></i> Read more...</a></td>
+            <td>
+              {{ if index .Params "zoom-link" }}
+                <a type="button" class="btn btn-success" target="_blank" href="{{ index .Params "zoom-link" }}"><i class="fa-solid fa-video"></i> Zoom link</a>
+              {{ end }}
+              <a type="button" class="btn btn-light" href="{{ .Permalink }}"><i class="fa-solid fa-glasses"></i> Read more...</a>
+            </td>
           </tr>
         {{ else }}
           <tr><td>
