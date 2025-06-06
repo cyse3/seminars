@@ -49,7 +49,7 @@
   <section>
     <h2>Latest seminars</h2>
     <div class="accordion" id="latest-seminars">
-      {{ range $index, $page := first 1 $pastTalks }}
+      {{ range $index, $page := first 5 $pastTalks }}
         {{ if ne .Kind "section" }} <!-- Exclude section index pages -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading-{{ $index }}">
