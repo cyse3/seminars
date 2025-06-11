@@ -4,8 +4,8 @@
   </section>
   
   {{ $now := now }}
-  {{ $futureTalks := where .Pages "Date" "gt" $now }}
-  {{ $pastTalks := where .Pages "Date" "le" $now }}
+  {{ $futureTalks := where .Pages "Date" "ge" $now }}
+  {{ $pastTalks := where .Pages "Date" "lt" $now }}
   
   <section>
     <h2>Scheduled Seminars</h2>

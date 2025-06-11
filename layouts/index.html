@@ -6,12 +6,15 @@
   </section>
 
   {{ $now := now }}
+  {{ $yesterday := $now.Add (time.ParseDuration "-24h") }}
   {{ $talks := where .Site.Pages "Type" "talks" }}
-  {{ $futureTalks := where $talks "Date" "gt" $now }}
-  {{ $pastTalks := where $talks "Date" "le" $now }}
+  {{ $futureTalks := where $talks "Date" "ge" $yesterday }}
+  {{ $pastTalks := where $talks "Date" "lt" $yesterday }}
+  {{ $pastTalks = sort $pastTalks "Params.date" "desc" }}
+  {{ $futureTalks = sort $futureTalks "Params.date" }}
   
   <section>
-      {{ range $index, $page := first 1 $futureTalks }}
+      {{ range $index, $page := first 2 $futureTalks }}
         {{ if ne .Kind "section" }} <!-- Exclude section index pages -->
     <h2>Upcoming seminar!</h2>
     <div class="accordion" id="upcoming-seminar">
