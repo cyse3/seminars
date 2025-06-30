@@ -4,9 +4,9 @@ date: 2025-07-02
 time: 2PM
 presenter: "charles-olivier-anclin"
 youtube: ""
-zoom-link: ""
-zoom-id: ""
-zoom-password: ""
+zoom-link: "https://york-ac-uk.zoom.us/j/97415255884?pwd=HhlXFEnWDi2bQMYfgOByMh80kab8ar.1"
+zoom-id: "97415255884"
+zoom-password: "836801"
 ---
 
 EMV is the de-facto worldwide payment system used by Mastercard, Visa, American Express, and such. But despite its widespread adoption, in-shop EMV contactless payments are not anonymous or private: the payers' long-term identification data leaks to merchants or even to observers.
