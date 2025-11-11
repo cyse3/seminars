@@ -1,6 +1,6 @@
 ---
 title: "Cybersecurity challenges in the era of AI"
-date: 2025-11-20
+date: 2025-11-12
 time: 2PM
 presenter: "crane"
 youtube: ""
