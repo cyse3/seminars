@@ -6,10 +6,10 @@
   </section>
 
   {{ $now := now }}
-  {{ $yesterday := $now.Add (time.ParseDuration "-24h") }}
+  {{ $currentEstimated := $now.Add (time.ParseDuration "-6h") }}
   {{ $talks := where .Site.Pages "Type" "talks" }}
-  {{ $futureTalks := where $talks "Date" "ge" $yesterday }}
-  {{ $pastTalks := where $talks "Date" "lt" $yesterday }}
+  {{ $futureTalks := where $talks "Date" "ge" $currentEstimated }}
+  {{ $pastTalks := where $talks "Date" "lt" $currentEstimated }}
   {{ $pastTalks = sort $pastTalks "Params.date" "desc" }}
   {{ $futureTalks = sort $futureTalks "Params.date" }}
   

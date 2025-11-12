@@ -4,8 +4,12 @@
   </section>
   
   {{ $now := now }}
-  {{ $futureTalks := where .Pages "Date" "ge" $now }}
-  {{ $pastTalks := where .Pages "Date" "lt" $now }}
+  {{ $currentEstimated := $now.Add (time.ParseDuration "-6h") }}
+  {{ $talks := where .Site.Pages "Type" "talks" }}
+  {{ $futureTalks := where $talks "Date" "ge" $currentEstimated }}
+  {{ $pastTalks := where $talks "Date" "lt" $currentEstimated }}
+  {{ $pastTalks = sort $pastTalks "Params.date" "desc" }}
+  {{ $futureTalks = sort $futureTalks "Params.date" }}
   
   <section>
     <h2>Scheduled Seminars</h2>
