@@ -17,14 +17,12 @@
       <thead></thead>
       <tbody>
         {{ range $futureTalks }}
-          {{ if .Params.title }}
+          {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" .Params.presenter) }}
+          {{ if $presenter }}
             <tr>
               <td><span class="badge bg-info">{{ .Date.Format "2 Jan 2006" }}</span></td>
               <td>
-                {{ $presenter := .Site.GetPage "presenters" (printf "presenters/%s" .Params.presenter) }}
-                {{ if $presenter }}
-                  <a class="text-warning-emphasis" href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a>
-                {{ end }}
+                <a class="text-warning-emphasis" href="{{ $presenter.Permalink }}">{{ $presenter.Params.name }}</a>
                 {{ if .Params.collaboration }}
                   <span class="badge bg-danger ms-3">{{ .Params.collaboration }}</span>
                 {{ end }}
