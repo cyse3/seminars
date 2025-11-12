@@ -3,6 +3,7 @@ title: "Cybersecurity challenges in the era of AI"
 date: 2025-11-12
 time: 5PM
 presenter: "crane"
+collaboration: CRANE
 youtube: ""
 zoom-link: "https://york-ac-uk.zoom.us/j/99617792253?pwd=67qYpBiMDyY73cwZuMzD49sNos9sCv.1"
 zoom-id: "996 1779 2253"
