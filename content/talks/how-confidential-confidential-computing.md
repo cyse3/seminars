@@ -3,7 +3,7 @@ title: "How confidential is confidential computing?"
 date: 2025-11-20
 time: 2PM
 presenter: "david-oswald"
-youtube: ""
+youtube: "rSZxNUQrJfs"
 zoom-link: "https://york-ac-uk.zoom.us/j/99617792253?pwd=67qYpBiMDyY73cwZuMzD49sNos9sCv.1"
 zoom-id: "996 1779 2253"
 zoom-password: "259477"
