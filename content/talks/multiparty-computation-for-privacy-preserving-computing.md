@@ -3,6 +3,7 @@ title: "Multiparty Computation for Privacy Preserving Computing?"
 date: 2025-12-11
 time: 2PM
 presenter: "berry-schoenmakers"
+collaboration: CRANE
 youtube: "9LCqrG3my3g"
 zoom-link: "https://york-ac-uk.zoom.us/j/95899031612?pwd=ZJ11R4o47g5k5BjD5WcCeGfjcKYSno.1"
 zoom-id: "958 9903 1612"
