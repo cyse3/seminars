@@ -10,7 +10,7 @@ zoom-id: "950 0612 8578"
 zoom-password: "766916"
 ---
 
-Join us for a panel discussion on Cyber-Resilient Innovation, with a focus on empowering business and dociety in the age of industry 5.0 and AI.
+Join us for exploring how cybersecurity awareness and research can support innovation, resilience, and responsible digital transformation.
 
 > Venue: CS Lewis Room, Ramada by Wyndham Belfast City Centre, Belfast
 
