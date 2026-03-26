@@ -5,9 +5,9 @@ time: 11AM
 presenter: "crane"
 collaboration: CRANE
 youtube: "MhFWznV9BA4"
-zoom-link: "https://york-ac-uk.zoom.us/j/95006128578?pwd=y9bwO0PWVTXtlSizHzQDYEY4DQMPoi.1"
-zoom-id: "950 0612 8578"
-zoom-password: "766916"
+zoom-link: "https://york-ac-uk.zoom.us/j/92092990924?pwd=3pbrfzVxVYXou6aL1ra1qd0KJ0PQFE.1"
+zoom-id: "920 9299 0924"
+zoom-password: "458461"
 ---
 
 Join us for exploring how cybersecurity awareness and research can support innovation, resilience, and responsible digital transformation.
