@@ -1,6 +1,6 @@
 ---
 title: "SlaClip: Gradient Norm Slacks can be Indicator for Adaptive Clipping in DP-SGD (ICML 2026 Spotlight)"
-date: 2026-06-12
+date: 2026-06-10
 time: 2PM
 presenter: "han-wu"
 youtube: "hYdgERWKk7M"
