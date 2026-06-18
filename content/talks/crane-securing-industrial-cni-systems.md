@@ -3,7 +3,7 @@ title: "A Whole Systems Approach to Securing Industrial CNI Systems"
 date: 2026-06-16
 time: 11AM
 presenter: "dimitrios-pezaros"
-youtube: "6UgFXXS7eCg"
+youtube: "iQKWYjlVZdc"
 zoom-link: "https://york-ac-uk.zoom.us/j/94420081754?pwd=zSkZrwFwHAt9MT9nXdzvmFPZCrtphj.1"
 zoom-id: "944 2008 1754"
 zoom-password: "993413"
