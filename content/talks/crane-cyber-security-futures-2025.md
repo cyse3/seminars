@@ -15,17 +15,15 @@ This interactive workshop will bring together researchers, cyber security profes
 The workshop aims to generate practical recommendations for strengthening partnerships between universities and industry while supporting the development of a more resilient and innovative cyber security ecosystem within the United Kingdom.
 
 ## Proposed agenda
-| | |
-|---:|:---|
-| 10:00–10:30 | Registration and Networking
-| 10:30–10:45 | Welcome and Introduction
-| 10:45–11:30 | Keynote: Emerging Challenges in Cyber Security
-| 11:30–12:30 | Workshop Session 1: Future Threat Landscape and Research Priorities
-| 12:30–13:15 | Lunch and Networking
-| 13:15–14:15 | Workshop Session 2: Academia–Industry Collaboration and Innovation
-| 14:15–15:00 | Workshop Session 3: Cyber Skills, Education, and Workforce Development
-| 15:00–15:30 | Panel Reflections and Audience Discussion
-| 15:30–16:00 | Networking Reception and Next Steps
+- 10:00–10:30 - Registration and Networking
+- 10:30–10:45 - Welcome and Introduction
+- 10:45–11:30 - Keynote: Emerging Challenges in Cyber Security
+- 11:30–12:30 - Workshop Session 1: Future Threat Landscape and Research Priorities
+- 12:30–13:15 - Lunch and Networking
+- 13:15–14:15 - Workshop Session 2: Academia–Industry Collaboration and Innovation
+- 14:15–15:00 - Workshop Session 3: Cyber Skills, Education, and Workforce Development
+- 15:00–15:30 - Panel Reflections and Audience Discussion
+- 15:30–16:00 - Networking Reception and Next Steps
 
 ## Speakers – Proposed Panel Members
 - Academic expert in Cyber Security, University of Roehampton – Dr. Mastaneh Davis
